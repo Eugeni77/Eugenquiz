@@ -19,7 +19,7 @@
     --navy-1: #ec83c4;
     --navy-2: #ec83c4;
     --text-light: #191717;
-    --text-dark: #0d0c0c;
+    --text-dark: #141414;
   }
   
   .row {
@@ -35,7 +35,7 @@
   
   .hoverable-button:hover {
     cursor: pointer;
-    box-shadow: 0 15px 10px #66688f;
+    box-shadow: 0 15px 10px #f6f7fa;
     transform: translateY(-5px);
   }
   
@@ -109,7 +109,7 @@
     background-color: var(--pink);
     border: none;
     border-radius: 8px;
-    box-shadow: 0 15px 10px #66688f3a;
+    box-shadow: 0 15px 10px #fcfcff3a;
     transition: all 0.3s ease 0s;
   }
   
