@@ -15,11 +15,11 @@
   
   :root {
     --pink: #ffd6ed;
-    --purple: #a47fb9;
-    --navy-1: #7c7ea2;
-    --navy-2: #5d5f83;
-    --text-light: #f5f5f5;
-    --text-dark: #333333;
+    --purple: #f3f0f5;
+    --navy-1: #ec83c4;
+    --navy-2: #ec83c4;
+    --text-light: #191717;
+    --text-dark: #0d0c0c;
   }
   
   .row {
@@ -239,10 +239,6 @@
     margin-right: 1em;
   }
   
-  .github-icon {
-    width: 45px;
-    height: 45px;
-  }
   
   /* media queries */
   /* medium screens */
@@ -371,9 +367,6 @@
       font-size: 24px;
     }
   
-    .github-icon {
-      height: 30px;
-      width: 30px;
-    }
+
   }
   
