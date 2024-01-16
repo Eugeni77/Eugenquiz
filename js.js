@@ -42,36 +42,8 @@ const questions = [
       answers: ["Kennedy", "B) Barack Obama", "C) Joe Biden", "D) Geroge Bush"],
       correct: "C",
     },
-    {
-      text: "Which is the last winner of European Cup?",
-      answers: [
-        "A) Mexico.",
-        "B) China.",
-        "C) France.",
-        "D) Albania.",
-      ],
-      correct: "C",
-    },
-    {
-      text: "Who won Best Player Award 2022?",
-      answers: [
-        "A) Muller",
-        "B) Broja",
-        "C) Ronaldo",
-        "D) Messi",
-      ],
-      correct: "D",
-    },
-    {
-      text: "Who is biggest country in the world?",
-      answers: [
-        "A) China.",
-        "B)USA.",
-        "C) Canada",
-        "D) Russia.",
-      ],
-      correct: "D",
-    },
+    
+    
     {
       text:
         "Who is owner os Starlink?",
@@ -198,12 +170,12 @@ function renderResults() {
   stopTimer();
   document.getElementById("timer-el").innerText = "";
   document.getElementById("invalid-initials-message").style.display = "none";
-  score = timeRemaining + correctQuestions * 10;
+  score = timeRemaining + correctQuestions * 7;
   sections.questionCard.style.display = "none";
   sections.results.style.display = "flex";
   document.getElementById(
     "correct-questions-el"
-  ).innerText = `${correctQuestions}/10`;
+  ).innerText = `${correctQuestions}/7`;
   document.getElementById("time-remaining-el").innerText = timeRemaining;
   document.getElementById("final-score-el").innerText = score;
   document.getElementById("initials").value = "";
@@ -213,7 +185,7 @@ function renderResults() {
 let localStorageKey = "WEB-APIS-CHALLENGE-code-quiz-mikeyrod22";
 function saveScore() {
   const initials = document.getElementById("initials").value.toUpperCase();
-  if (initials.length !== 3 || initials.match(/[^a-zA-Z]/)) {
+  if (initials.length !== 5 || initials.match(/[^a-zA-Z]/)) {
     document.getElementById("invalid-initials-message").style.display = "unset";
   } else {
     let store = window.localStorage.getItem(localStorageKey);
