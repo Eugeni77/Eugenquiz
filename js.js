@@ -171,7 +171,7 @@ function captureAnswer(e) {
     correctQuestions++;
     document.getElementById("question-notification-el").innerText = "Correct!";
   } else {
-    timeRemaining > 30 ? (timeRemaining -= 30) : (timeRemaining = 0);
+    timeRemaining > 10 ? (timeRemaining -= 10) : (timeRemaining = 0);
     document.getElementById(
       "question-notification-el"
     ).innerText = `Incorrect... The correct answer was ${questions[questionCounter].correct}`;
