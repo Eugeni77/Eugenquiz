@@ -2,4 +2,4 @@ In this code quiz i have created a quiz in which i have given 120 seconds to ans
 Git link:
 https://eugeni77.github.io/Eugenquiz/
 
-![Alt text](<127.0.0.1_5500_index.html (4).png>)
+![Alt text](<127.0.0.1_5500_index.html (5).png>)
